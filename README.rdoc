@@ -1,4 +1,4 @@
-= pasco
+= Pasco
 Pasco is a gem that reads ie histories on provideing ie history file i.e *.dat.
 
 It is based on open source library [http://sourceforge.net/projects/odessa/files/] 
