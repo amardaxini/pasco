@@ -12,8 +12,6 @@ def initialize(url="",modified_time="",acess_time="",file_name="",directory="",h
  end
 
  def self.get_history(file_name)
-   @ie_histories =[]
-#   gem_path = Gem.dir+"/gems/pasco-#{}"
    if !file_name.nil? &&  File.extname(file_name) == ".dat"
      if RUBY_PLATFORM=~ /linux/ || RUBY_PLATFORM =~ /darwin/
         result =`pasco "#{file_name}"`
