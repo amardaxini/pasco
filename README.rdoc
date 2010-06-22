@@ -1,6 +1,11 @@
 = pasco
+Pasco is a gem that reads ie histories on provideing ie history file i.e *.dat.
+It is based on open source library [http://sourceforge.net/projects/odessa/files/] 
 
-Description goes here.
+== Example 
+Pasco.get_history(path of ie history file)
+It will return an array of object that contains
+url,modified_time,access_time,file_name,directory,http_header
 
 == Note on Patches/Pull Requests
  

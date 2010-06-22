@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "pasco"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{TODO: read ie browsing histories based on pasco open source project}
+    gem.description = %Q{TODO: pasco is a gem that reads ie histories on provideing ie history file i.e *.dat}
     gem.email = "amardaxini@gmail.com"
     gem.homepage = "http://github.com/amardaxini/pasco"
     gem.authors = ["amardaxini"]
