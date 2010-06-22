@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
      "bin/pasco",
      "bin/pasco.exe",
      "lib/pasco.rb",
+     "pasco.gemspec",
      "test/helper.rb",
      "test/test_pasco.rb"
   ]
