@@ -13,12 +13,12 @@ def initialize(url="",modified_time="",acess_time="",file_name="",directory="",h
 
  def self.get_history(file_name)
    @ie_histories =[]
-   gem_path = Gem.dir+"/gems/pasco"
+#   gem_path = Gem.dir+"/gems/pasco-#{}"
    if !file_name.nil? &&  File.extname(file_name) == ".dat"
      if RUBY_PLATFORM=~ /linux/ || RUBY_PLATFORM =~ /darwin/
-        result =`#{gem_path}/bin/pasco "#{file_name}"`
+        result =`pasco "#{file_name}"`
      else #FOR Windows Ihave Not tested yet
-       result=`../bin/pasco.exe "#{file_name}"`
+       result=`pasco.exe "#{file_name}"`
      end  
      @ie_histories = self.process_history(result)
    else
