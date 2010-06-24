@@ -1,11 +1,11 @@
 require 'rubygems'
 require 'ruby-debug'
 class Pasco
- attr_reader :url,:modified_time,:acess_time,:file_name,:directory,:http_header
-def initialize(url="",modified_time="",acess_time="",file_name="",directory="",http_header="")
+ attr_reader :url,:modified_time,:access_time,:file_name,:directory,:http_header
+def initialize(url="",modified_time="",access_time="",file_name="",directory="",http_header="")
    @url = url
    @modified_time = modified_time
-   @acess_time = acess_time;
+   @access_time = access_time;
    @file_name = file_name
    @directory =directory
    @http_header = http_header
