@@ -14,13 +14,13 @@ def initialize(url="",modified_time="",access_time="",file_name="",directory="",
  def self.get_history(file_name)
    if !file_name.nil? &&  File.extname(file_name) == ".dat"
      if RUBY_PLATFORM=~ /linux/ || RUBY_PLATFORM =~ /darwin/
-        pasco_path = File.expand_path(File.join("pasco"))
+        pasco_path = File.expand_path(File.join(File.dirname(__FILE__),"pasco"))
         command = "#{pasco_path} #{file_name}"
-        result =system(command)
+        result =`#{command}`
      else #FOR Windows Not tested yet
-        pasco_path = File.expand_path(File.join("pasco.exe"))
+        pasco_path = File.expand_path(File.dirname(__FILE__),"pasco.exe")
         command = "#{pasco_path} #{file_name}"
-        result =system(command)
+        result = `#{command}`
      end  
      @ie_histories = self.process_history(result)
    else
